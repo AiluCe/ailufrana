@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Case study de Workflow Builder: diseño de un editor visual de workflows para un equipo de Data." />
+    <title>Workflow Builder · AILU_PORTFOLIO.v1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="site-shell">
+        <aside class="sidebar" aria-label="Navegación principal">
+            <div class="sidebar-main">
+                <a href="/index.html" class="brand"><strong>AILU_PORTFOLIO.v1</strong><span>UX/UI DESIGN &amp; UX
+                        RESEARCH</span></a>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar-nav"
+                    aria-label="Abrir menú">
+                    <svg class="menu-toggle__icon-open" viewBox="0 0 24 24" width="20" height="20" fill="none"
+                        stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                        <line x1="9.5" y1="4" x2="9.5" y2="20"></line>
+                    </svg>
+                    <svg class="menu-toggle__icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none"
+                        stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <line x1="5" y1="5" x2="19" y2="19"></line>
+                        <line x1="19" y1="5" x2="5" y2="19"></line>
+                    </svg>
+                </button>
+                <nav class="nav-list" id="sidebar-nav">
+                    <a class="nav-link " href="index.html#inicio"><img src="assets/info.svg" alt="" />01 README.md</a>
+                    <div class="project-nav">
+                        <a class="nav-link" href="index.html#proyectos" aria-current="true"><img
+                                src="assets/ic_lab.svg" alt="" />02
+                            PROYECTOS</a>
+                        <div class="project-subnav">
+                            <a href="workflow-builder.html" class="nav-link active">01. WORKFLOW BUILDIER</a>
+                            <a href="cuidapp.html">02. CUIDAPP</a>
+                        </div>
+                    </div>
+                    <a class="nav-link" href="#curriculum"><img src="assets/Ic_cv.svg" alt="" />03 CURRICULUM.docx</a>
+                </nav>
+            </div>
+            <div class="sidebar-footer">
+                <a href="mailto:faranaailen@gmail.com" class="contact-me">CONTACT_ME →</a>
+                <a href="https://www.linkedin.com/in/faranaailen/" class="social-link"><img src="assets/Ic_linkedin.svg"
+                        alt="" />LinkedIn</a>
+                <a href="mailto:faranaailen@gmail.com" class="social-link"><img src="assets/Email.svg" alt="" />Correo
+                    Electrónico</a>
+            </div>
+        </aside>
+        <main class="main-content case-page" id="top">
+            <header class="topbar">
+                <nav class="breadcrumb" aria-label="Ruta de navegación">
+                    <a href="index.html#inicio">INDEX</a> / <a href="index.html#proyectos" class="active"
+                        aria-current="true">02 PROYECTOS</a> / <span aria-current="page">01. WORKFLOW BUILDER</span>
+                </nav>
+                <button class="contact-button" type="button">CONTACTO</button>
+            </header>
+            <section class="case-hero">
+                <div class="hero-copy">
+                    <h1>Workflow Buldier</h1>
+                    <p>Diseñé desde cero un módulo que permite construir workflows complejos mediante un editor visual
+                        basado en nodos, y hacer seguimiento de su ejecución a través de una interfaz de logs.</p>
+                </div>
+                <div class="case-meta"><span class="meta-divider" aria-hidden="true">---</span>
+                    <dl>
+                        <dt>STATUS</dt>
+                        <dd>Completo</dd>
+                        <dt>YEAR</dt>
+                        <dd>2023</dd>
+                        <dt>ROL</dt>
+                        <dd>UI Designer · Prototipado</dd>
+                        <dt>CLIENT</dt>
+                        <dd>Proyecto realizado como freelance para una agencia, destinado al equipo de Data de
+                            empresa líder en E-commerce</dd>
+                        <dt>TEAM</dt>
+                        <dd>UX/UI Designer (yo)<br />Desarrollo<br />MP</dd>
+                        <dt>TOOLS</dt>
+                        <dd>Figma</dd>
+                        <dt>DURATION</dt>
+                        <dd>6 Semanas</dd>
+                    </dl>
+                    <span class="meta-divider" aria-hidden="true">---</span>
+                </div>
+                <aside class="confidential">
+                    <span aria-hidden="true">♧</span>
+                    <div>
+                        <b>NOTA DE CONFIDENCIALIDAD:</b>
+                        <p>Por acuerdo de confidencialidad (NDA), las pantallas fueron censuradas o simplificadas. Este
+                            caso se centra en el proceso y las decisiones de diseño.</p>
+                    </div>
+                </aside>
+            </section>
+            <article class="case-content">
+                <section>
+                    <h2>1. Contexto</h2>
+                    <p>El equipo de Data configuraba sus automatizaciones de forma manual y poco visual: cada acción y
+                        condición se armaba por separado, sin una vista unificada del flujo completo. Necesitaban una
+                        forma de construir y monitorear workflows sin depender de desarrollo para cada cambio.</p>
+                </section>
+                <section>
+                    <h2>2. Entendiendo el proceso</h2>
+                    <p>Antes de definir el user flow, identifiqué los puntos de fricción del proceso: crear una
+                        automatización implicaba resolver muchas tareas distintas a la vez (datos generales, alertas,
+                        lógica del flujo, condiciones), y era necesario simplificar cómo se presenta toda esa
+                        información.</p>
+                    <figure class="flow-figure">
+                        <img src="assets/UserFlow configuracion inicial.png" alt="Userflow de configuración general" />
+                        <figcaption>Userflow configuración general</figcaption>
+                    </figure>
+                    <figure class="flow-figure">
+                        <img src="assets/Userflow construcción workflow.png" alt="Userflow de construcción del workflow" />
+                        <figcaption>Userflow construcción de workflow</figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <h2>3. Decisiones de diseño</h2>
+                    <div class="decision-grid">
+                        <div class="card">
+                            <div class="card__header">
+                                <div class="card__icon">
+                                    <img src="assets/icon card 1.svg" alt="" class="card__icon-img" />
+                                </div>
+                                <h3 class="card__title">Construcción progresiva</h3>
+                            </div>
+                            <div class="card__body">
+                                <p class="card__text">
+                                    Cada nodo se agrega, configura y valida de forma independiente, lo que permite
+                                    concentrarse en una decisión a la vez y facilita editar el flujo más adelante.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <div class="card__icon">
+                                    <img src="assets/Icon card 2.svg" alt="" class="card__icon-img" />
+                                </div>
+                                <h3 class="card__title">Editor basado en nodos.</h3>
+                            </div>
+                            <div class="card__body">
+                                <p class="card__text">
+                                    Cada nodo representa una acción del proceso; las conexiones definen orden de
+                                    ejecución y
+                                    bifurcaciones condicionales.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <div class="card__icon">
+                                    <img src="assets/Icon card 3.svg" alt="" class="card__icon-img" />
+                                </div>
+                                <h3 class="card__title"> Biblioteca lateral con drag &amp; drop</h3>
+                            </div>
+                            <div class="card__body">
+                                <p class="card__text">
+                                    Las acciones se muestran disponibles para construir el flujo de manera gradual
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <div class="card__icon">
+                                    <img src="assets/Icon card 4.svg" alt="" class="card__icon-img" />
+                                </div>
+                                <h3 class="card__title"> Configuración contextual</h3>
+                            </div>
+                            <div class="card__body">
+                                <p class="card__text">
+                                    Cada nodo se edita desde un panel lateral que no interrumpe la vista del flujo
+                                    completo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    <figure class="product-shot">
+        <img src="assets/Workflow Builder Wireframe Medio.png" alt="Editor visual de workflows" />
+        <figcaption>Wireframe Medio Fidelidad Canvas</figcaption>
+    </figure>
+    </section>
+    <section>
+        <h2>4. De crear a monitorear</h2>
+        <p>El recorrido no terminaba en el editor: una vez ejecutado un workflow, el equipo necesitaba
+            entender qué había pasado. Diseñé un módulo de monitoreo (Data Monitor) con lista de
+            ejecuciones, detalle, logs y filtros, para que crear + guardar + ejecutar + monitorear
+            funcionara como un único flujo.</p>
+        <figure class="product-shot">
+            <img src="assets/Monitor Wireframe Baja.png" alt="Módulo de monitoreo de workflows" />
+            <figcaption>Wireframe Baja Fidelidad Monitor</figcaption>
+        </figure>
+    </section>
+    <section>
+        <h2>5. Aprendizajes</h2>
+        <p>Este proyecto fue mi primera experiencia diseñando una herramienta interna de alta complejidad.
+            Me enfrenté al desafío de representar procesos técnicos mediante una interfaz visual clara y
+            escalable, respetando un Design System existente y colaborando estrechamente con desarrollo para
+            asegurar la viabilidad de la solución.</p>
+        <p>Algunos aprendizajes puntuales fueron:</p>
+        <ul>
+            <li>Diseñar herramientas internas implica priorizar eficiencia y claridad por encima de la
+                expresividad visual.</li>
+            <li>Un editor visual exitoso depende tanto de la organización de la información como de la
+                calidad de las interacciones.</li>
+            <li>Trabajar sobre un Design System consolidado obliga a justificar cada decisión y favorece la
+                consistencia del producto.</li>
+        </ul>
+    </section>
+    <h3 class="thanks">Gracias por leer</h3>
+    <a class="next-case" href="cuidapp.html">[[SIGUIENTE]] →</a>
+    </article>
+    <footer>Copyright © 2020 All Rights Reserved</footer>
+    </main>
+    </div>
+    <dialog class="contact-dialog"><button class="close" aria-label="Cerrar">×</button>
+        <p>¿Hablamos de tu próximo proyecto?</p><a href="mailto:faranaailen@gmail.com">faranaailen@gmail.com</a>
+    </dialog>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de UX/UI Design y UX Research" />
+  <title>AILU_PORTFOLIO.v1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="site-shell">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <div class="sidebar-main">
+        <a href="/index.html" class="brand"><strong>AILU_PORTFOLIO.v1</strong><span>UX/UI DESIGN &amp; UX
+            RESEARCH</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar-nav"
+          aria-label="Abrir menú">
+          <svg class="menu-toggle__icon-open" viewBox="0 0 24 24" width="20" height="20" fill="none"
+            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+            aria-hidden="true">
+            <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+            <line x1="9.5" y1="4" x2="9.5" y2="20"></line>
+          </svg>
+          <svg class="menu-toggle__icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none"
+            stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+            aria-hidden="true">
+            <line x1="5" y1="5" x2="19" y2="19"></line>
+            <line x1="19" y1="5" x2="5" y2="19"></line>
+          </svg>
+        </button>
+        <nav class="nav-list" id="sidebar-nav">
+          <a class="nav-link active" href="#inicio"><img src="assets/info.svg" alt="" />01 README.md</a>
+          <div class="project-nav">
+            <a class="nav-link" href="#proyectos"><img src="assets/ic_lab.svg" alt="" />02 PROYECTOS</a>
+            <div class="project-subnav">
+              <a href="workflow-builder.html">01. WORKFLOW BUILDIER</a>
+              <a href="cuidapp.html">02. CUIDAPP</a>
+            </div>
+          </div>
+          <a class="nav-link" href="#curriculum"><img src="assets/Ic_cv.svg" alt="" />03 CURRICULUM.docx</a>
+        </nav>
+      </div>
+      <div class="sidebar-footer">
+        <a href="mailto:faranaailen@gmail.com" class="contact-me">CONTACT_ME →</a>
+        <a href="https://www.linkedin.com/in/faranaailen/" class="social-link"><img src="assets/Ic_linkedin.svg"
+            alt="" />LinkedIn</a>
+        <a href="mailto:faranaailen@gmail.com" class="social-link"><img src="assets/Email.svg" alt="" />Correo
+          Electrónico</a>
+      </div>
+    </aside>
+    <main class="main-content" id="inicio">
+      <header class="topbar">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+          <a href="index.html#inicio">INDEX</a> / <span aria-current="page">01. README.MD</span>
+        </nav>
+        <button class="contact-button" type="button">CONTACTO</button>
+      </header>
+      <section class="hero" aria-labelledby="intro-title">
+        <div class="hero-copy">
+          <h1 id="intro-title">Diseño productos entendiendo cómo funcionan las personas, los sistemas y el negocio</h1>
+          <p>Soy UX/UI designer y UX Researcher con formación en Sociología. Me interesa transformar investigación en
+            decisiones de diseño claras, fundamentadas y útiles para las personas y para el negocio.</p>
+        </div>
+        <div class="status-block"><span class="meta-divider" aria-hidden="true">---</span>
+          <dl>
+            <dt>STATUS</dt>
+            <dd>Disponible para nuevos proyectos</dd>
+            <dt>LOCATION</dt>
+            <dd>Buenos Aires, Argentina</dd>
+            <dt>FOCUS</dt>
+            <dd>UX Research · Product Design</dd>
+            <dt>CURRENTLY</dt>
+            <dd>Iterando el portfolio, enseñando diseño de interacción</dd>
+          </dl>
+          <span class="meta-divider" aria-hidden="true">---</span>
+        </div>
+      </section>
+      <section class="projects" id="proyectos" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Proyectos destacados</h2>
+        <article class="project-card" id="workflow">
+          <aside class="card-sidebar">
+            <div class="tags">
+              <span class="tag gold">UI Design</span>
+              <span class="tag red">Prototipado</span>
+            </div>
+            <div class="contents">
+              <b>Contenido</b>
+              <span>01. Contexto</span>
+              <span>02. Proceso</span>
+              <span>03. Decisiones de diseño</span>
+              <span>04. Monitor</span>
+              <span>05. Aprendizaje</span>
+            </div>
+          </aside>
+          <div class="card-body">
+            <div class="card-heading">
+              <h3>Workflow Builder</h3>
+              <span>2023</span>
+            </div>
+            <div class="card-summary">
+              <div>
+                <strong>Diseño de un editor visual para la creación y monitoreo de workflows en un dashboard interno de
+                  un equipo de Data.</strong>
+                <p>Diseñé desde cero un nuevo módulo para una herramienta interna, permitiendo crear automatizaciones
+                  complejas mediante un editor visual basado en nodos y monitorear su ejecución a través de una interfaz
+                  de logs.</p>
+              </div>
+              <img src="assets/workflow-builder.png" alt="Captura del editor Workflow Builder" />
+            </div>
+            <a class="case-link" href="workflow-builder.html">Abrir Case Study <span>→</span></a>
+          </div>
+        </article>
+        <article class="project-card" id="cuidapp">
+          <aside class="card-sidebar">
+            <div class="tags">
+              <span class="tag green">UX Research</span>
+              <span class="tag gold">UI Design</span>
+            </div>
+            <div class="contents"><b>Contenido</b>
+              <span>01. Contexto</span>
+              <span>02. El desafio</span>
+              <span>03. El problema</span>
+              <span>04. Co-Diseño</span>
+              <span>05. Flows</span>
+              <span>06. MVP</span>
+              <span>07. Validación</span>
+              <span>08. Proximos Pasos</span>
+              <span>09. Aprendizaje</span>
+            </div>
+          </aside>
+          <div class="card-body">
+            <div class="card-heading">
+              <h3>Cuidapp</h3>
+              <span>2026</span>
+            </div>
+            <div class="card-summary">
+              <div>
+                <p>En el marco de la materia optativa Diseño Integral de aplicaciones móviles para la salud humana
+                  diseñamos una aplicación que permite a los médicos enviar actualizaciones asincrónicas sobre el estado
+                  de pacientes internados, ayudando a mantener informadas a las familias sin interrumpir el flujo de
+                  trabajo clínico ni reemplazar el encuentro presencial.</p>
+              </div>
+              <img class="phone-shot" src="assets/CuidappImg.png" alt="Pantalla de la aplicación Cuidapp" />
+            </div><a class="case-link" href="cuidapp.html">Abrir Case Study <span>→</span></a>
+          </div>
+        </article>
+      </section>
+      <footer>Copyright © 2020 All Rights Reserved</footer>
+    </main>
+  </div>
+  <dialog class="contact-dialog"><button class="close" aria-label="Cerrar">×</button>
+    <p>¿Hablamos de tu próximo proyecto?</p><a href="mailto:faranaailen@gmail.com">faranaailen@gmail.com</a>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+
+</html>
