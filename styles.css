@@ -740,6 +740,23 @@ footer {
     margin: 0
 }
 
+.case-hero .hero-copy p.case-subtitle {
+    color: var(--ink);
+    font-weight: 600;
+    margin-bottom: 12px
+}
+
+.case-hero-media {
+    margin: 0;
+    max-width: 800px
+}
+
+.case-hero-media img {
+    display: block;
+    height: auto;
+    width: 100%
+}
+
 .case-meta {
     color: var(--muted);
     font: 400 12px/16.8px var(--mono);
@@ -827,10 +844,51 @@ footer {
     text-align: right
 }
 
+.case-placeholder {
+    border: 1px dashed var(--muted);
+    color: var(--muted);
+    font: 500 12px/16.8px var(--mono);
+    letter-spacing: .6px;
+    margin: 0;
+    padding: 16px
+}
+
+.case-placeholder--media {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 240px;
+    text-align: center;
+    width: 100%
+}
+
+.split-media .case-placeholder--media {
+    flex: 1 1 260px;
+    max-width: 250px
+}
+
+.feature-row .case-placeholder--media {
+    flex: 1 1 260px;
+    max-width: 320px
+}
+
 .decision-grid {
     display: grid;
     gap: 8px;
     grid-template-columns: 1fr 1fr
+}
+
+.decision-grid--three {
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+}
+
+.decision-grid--three .card {
+    justify-content: center
+}
+
+.decision-grid--three .card__body {
+    padding-left: 0;
+    padding-right: 0
 }
 
 .card {
@@ -917,12 +975,36 @@ footer {
     margin: 5px 0
 }
 
+.learning-list {
+    margin-top: 40px
+}
+
+.learning-item {
+    border-bottom: 1px solid var(--line);
+    padding: 24px 0
+}
+
+.learning-item:last-child {
+    border-bottom: 0
+}
+
+.learning-item h3 {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 8px
+}
+
+.learning-item p {
+    margin: 0
+}
+
 .thanks {
     font-size: 18px;
     margin: 0
 }
 
-.next-case {
+.next-case,
+.previous-case {
     color: #3d5a80;
     display: block;
     font: 500 14px/17px var(--mono);
@@ -931,8 +1013,27 @@ footer {
     text-align: right
 }
 
-.next-case:hover {
+.previous-case {
+    text-align: left
+}
+
+.next-case:hover,
+.previous-case:hover {
     text-decoration: underline
+}
+
+.case-navigation {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    justify-content: space-between;
+    margin-top: 64px
+}
+
+.case-navigation .next-case,
+.case-navigation .previous-case {
+    margin-top: 0
 }
 
 .case-page footer {
@@ -982,6 +1083,14 @@ footer {
 
     .case-content .product-shot {
         margin-top: 32px
+    }
+
+    .case-placeholder--media {
+        min-height: 180px
+    }
+
+    .split-media .case-placeholder--media {
+        order: -1
     }
 
     .flow-figure {
@@ -1037,6 +1146,16 @@ footer {
     height: auto;
     max-width: 320px;
     width: 100%
+}
+
+.clubpethouse-file-sequence .feature-row--flows img {
+    flex-basis: 380px;
+    max-width: 464px
+}
+
+.clubpethouse-file-sequence .feature-row img {
+    align-self: center;
+    object-fit: contain
 }
 
 .hscroll-viewport {
